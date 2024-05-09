@@ -2,6 +2,8 @@
 
 # binar-authentication-authorization-exercise
 
+## Slide 8
+
 ### 1. Apa itu otentikasi?
 
 Otentikasi adalah proses verifikasi identitas user, yang digunakan untuk verifikasi tersebut biasanya username/email atau password, atau keduanya.
@@ -58,3 +60,47 @@ otentikasi tambahan dalam proses otentikasi dua faktor (2FA) atau otentikasi mul
 1. Mengimplementasikan Otentikasi Multifaktor (MFA)
 2. Mewajibkan pengguna untuk menggunakan kata sandi yang kuat dengan panjang yang mencukupi, campuran huruf besar dan kecil, angka, dan karakter khusus
 3. Menggunakan teknologi biometrik, seperti pemindaian sidik jari atau pemindaian wajah, sebagai faktor otentikasi tambahan dapat memperkuat keamanan sistem dengan mengandalkan karakteristik fisik unik dari individu.
+
+## Slide 9
+
+### 1. Apa itu otorisasi?
+
+### 2. Apa perbedaan utama antara otentikasi dan otorisasi?
+
+### 3. Sebutkan dua metode otorisasi yang sering digunakan dalam sistem komputer.
+
+### 4. Apa itu Role-based Access Control?
+
+### 5. Apa itu Policy-based Access Control?
+
+### 6. Apa keuntungan menggunakan ABAC dibandingkan dengan RBAC?
+
+### 7. Apa itu JSON Web Token (JWT) dan bagaimana hubungannya dengan otorisasi?
+
+### 8. Apa yang dimaksud dengan "least privilege" dalam konteks otorisasi?
+
+### 9. Mengapa penting untuk sering memeriksa dan memperbarui kebijakan otorisasi?
+
+### 10. Apa itu Access Control List (ACL)?
+
+## Slide 10
+
+### 1. Bagaimana otentikasi dan otorisasi bekerja bersama dalam keamanan sistem informasi?
+
+### 2. Sebutkan contoh aplikasi yang menggunakan otentikasi dan otorisasi.
+
+### 3. Apa yang terjadi jika proses otentikasi gagal?
+
+### 4. Mengapa penting untuk log aktivitas otentikasi dan otorisasi?
+
+### 5. Bagaimana cara sistem menangani perubahan kebijakan otorisasi tanpa mengganggu pengguna?
+
+### 6. Apa pengaruh kegagalan sistem otentikasi terhadap proses otorisasi?
+
+### 7. Bagaimana implementasi kebijakan "zero trust" mempengaruhi otentikasi dan otorisasi?
+
+### 8. Apa dampak dari serangan keamanan pada sistem otentikasi dan otorisasi?
+
+### 9. Bagaimana teknologi blockchain dapat mempengaruhi otentikasi dan otorisasi?
+
+### 10. Apa peran administrator sistem dalam pengelolaan otentikasi dan otorisasi?
