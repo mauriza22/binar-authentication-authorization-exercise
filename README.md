@@ -65,15 +65,36 @@ otentikasi tambahan dalam proses otentikasi dua faktor (2FA) atau otentikasi mul
 
 ### 1. Apa itu otorisasi?
 
+Authorization adalah proses yang terjadi setelah identifikasi user tersebut berhasil dan hak atau akses apa saja yang bisa didapat oleh user tersebut.
+
 ### 2. Apa perbedaan utama antara otentikasi dan otorisasi?
+
+Yang membedakannya adalah authentication itu proses untuk mendapatkan identitas sedangkan authorization itu adalah proses pemberian izin identitas tersebut.
 
 ### 3. Sebutkan dua metode otorisasi yang sering digunakan dalam sistem komputer.
 
+1. Hak Akses Berbasis Peran (Role-Based Access Control/RBAC): Ini adalah metode di mana pengguna diberikan hak akses berdasarkan peran atau tanggung jawab mereka dalam organisasi. Sebagai contoh, seorang pegawai administrasi dapat memiliki
+   akses untuk mengelola dokumen, sedangkan seorang manajer dapat memiliki akses untuk menyetujui atau menolak permintaan.
+2. Pengendalian Akses Berbasis Kebijakan (Policy-Based Access Control/PBAC): Ini adalah metode di mana pengguna diberikan hak akses berdasarkan aturan atau kebijakan yang ditetapkan oleh administrator. Misalnya, sebuah perusahaan dapat
+   menetapkan kebijakan bahwa hanya karyawan dengan level akses tertentu yang dapat mengakses data keuangan atau rahasia perusahaan.
+
 ### 4. Apa itu Role-based Access Control?
+
+Role-based Access Control (RBAC) adalah sebuah model kontrol akses yang mengatur akses ke sistem komputer berdasarkan peran (role) dari pengguna dalam organisasi atau sistem.
 
 ### 5. Apa itu Policy-based Access Control?
 
+Policy-based Access Control (PBAC) adalah cara untuk mengontrol siapa yang memiliki akses ke apa dalam sebuah sistem komputer berdasarkan pada aturan atau kebijakan yang telah ditetapkan sebelumnya. Dalam PBAC, kebijakan akses bisa
+berdasarkan pada banyak hal, seperti jabatan seseorang, waktu akses, lokasi, atau tipe data yang diakses. Tujuannya adalah untuk memastikan bahwa orang hanya mendapatkan akses ke apa yang mereka butuhkan dan memiliki izin untuk menggunakan,
+dan tidak lebih dari itu.
+
 ### 6. Apa keuntungan menggunakan ABAC dibandingkan dengan RBAC?
+
+Keuntungan menggunakan ABAC dibandingkan dengan RBAC meliputi:
+
+- Fleksibilitas yang Lebih Besar: ABAC memberikan fleksibilitas yang lebih besar dalam menentukan hak akses karena penggunaan atribut memungkinkan untuk menyesuaikan akses dengan lebih detail sesuai dengan kebutuhan bisnis atau keamanan.
+- Konteks yang Lebih Kaya: Dengan ABAC, hak akses dapat dipertimbangkan dalam konteks yang lebih kaya, seperti lokasi, waktu, dan atribut lainnya, yang dapat meningkatkan keamanan dan efisiensi akses.
+- Manajemen yang Lebih Efisien: ABAC dapat memudahkan manajemen hak akses karena aturan-aturan dapat dikelola secara terpusat dan diterapkan dengan lebih fleksibel sesuai dengan kebijakan organisasi.
 
 ### 7. Apa itu JSON Web Token (JWT) dan bagaimana hubungannya dengan otorisasi?
 
@@ -82,6 +103,9 @@ otentikasi tambahan dalam proses otentikasi dua faktor (2FA) atau otentikasi mul
 ### 9. Mengapa penting untuk sering memeriksa dan memperbarui kebijakan otorisasi?
 
 ### 10. Apa itu Access Control List (ACL)?
+
+Access Control List (ACL) adalah daftar yang menentukan izin atau hak akses yang dimiliki oleh pengguna atau grup pengguna terhadap sumber daya tertentu dalam sebuah sistem komputer. ACL biasanya diterapkan pada file, folder, atau objek
+lainnya dalam sistem operasi atau jaringan komputer. ACL mendefinisikan siapa yang dapat mengakses suatu sumber daya dan apa jenis akses yang mereka izinkan, seperti membaca, menulis, atau menjalankan.
 
 ## Slide 10
 
