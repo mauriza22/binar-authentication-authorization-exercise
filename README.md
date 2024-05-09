@@ -92,15 +92,37 @@ dan tidak lebih dari itu.
 
 Keuntungan menggunakan ABAC dibandingkan dengan RBAC meliputi:
 
-- Fleksibilitas yang Lebih Besar: ABAC memberikan fleksibilitas yang lebih besar dalam menentukan hak akses karena penggunaan atribut memungkinkan untuk menyesuaikan akses dengan lebih detail sesuai dengan kebutuhan bisnis atau keamanan.
-- Konteks yang Lebih Kaya: Dengan ABAC, hak akses dapat dipertimbangkan dalam konteks yang lebih kaya, seperti lokasi, waktu, dan atribut lainnya, yang dapat meningkatkan keamanan dan efisiensi akses.
+- Fleksibilitas: ABAC memberikan fleksibilitas yang lebih besar dalam menentukan hak akses karena penggunaan atribut memungkinkan untuk menyesuaikan akses dengan lebih detail sesuai dengan kebutuhan bisnis atau keamanan.
+- Konteks yang Lebih kompleks: Dengan ABAC, hak akses dapat dipertimbangkan dalam konteks yang lebih kompleks, seperti lokasi, waktu, dan atribut lainnya, yang dapat meningkatkan keamanan dan efisiensi akses.
 - Manajemen yang Lebih Efisien: ABAC dapat memudahkan manajemen hak akses karena aturan-aturan dapat dikelola secara terpusat dan diterapkan dengan lebih fleksibel sesuai dengan kebijakan organisasi.
 
 ### 7. Apa itu JSON Web Token (JWT) dan bagaimana hubungannya dengan otorisasi?
 
+JSON Web Token (JWT) adalah format yang digunakan untuk mentransfer informasi terstruktur secara aman antara dua pihak. JWT biasanya digunakan untuk mengotentikasi dan mengotorisasi pengguna dalam sistem yang terdistribusi atau terhubung
+secara jaringan.
+
+JWT memiliki tiga bagian utama: header, payload, dan signature. Header mengidentifikasi jenis token dan algoritma yang digunakan untuk mengenkripsi data. Payload berisi informasi yang ingin disampaikan, seperti ID pengguna atau izin akses.
+Signature adalah hasil dari penggabungan header dan payload dengan sebuah kunci rahasia, yang digunakan untuk memastikan bahwa token tidak diubah atau dipalsukan.
+
+Hubungannya dengan otorisasi -> JWT sering digunakan sebagai cara untuk memberikan izin akses kepada pengguna dalam sistem. Setelah pengguna berhasil melakukan otentikasi dan diberikan JWT, token tersebut dapat digunakan untuk mengakses
+sumber daya atau layanan yang dilindungi oleh sistem. Informasi dalam payload JWT seringkali berisi izin-izin yang diberikan kepada pengguna, seperti apa yang mereka bisa lakukan dan apa yang tidak mereka bisa lakukan.
+
 ### 8. Apa yang dimaksud dengan "least privilege" dalam konteks otorisasi?
 
+"Least privilege" dalam konteks otorisasi berarti memberikan pengguna atau sistem hanya hak akses yang diperlukan untuk menjalankan tugas atau fungsi tertentu, dan tidak memberikan hak akses yang lebih banyak dari yang dibutuhkan.
+
+Dengan menerapkan prinsip "least privilege", sistem komputer atau organisasi hanya memberikan akses yang tepat kepada pengguna atau sistem untuk melakukan tugas atau fungsi yang diperlukan. Hal ini membantu mengurangi risiko keamanan karena
+mengurangi jumlah akses yang tidak perlu dan meminimalkan dampak jika ada kebocoran keamanan atau pelanggaran yang terjadi.
+
 ### 9. Mengapa penting untuk sering memeriksa dan memperbarui kebijakan otorisasi?
+
+1. **Mengurangi Risiko Keamanan**: Ketika kebijakan otorisasi diperiksa secara teratur, maka kita dapat mengidentifikasi dan memperbaiki celah keamanan atau kelemahan yang mungkin ada dalam sistem. Ini membantu mengurangi risiko akses tidak
+   sah atau penyalahgunaan oleh pihak yang tidak berwenang.
+
+2. **Menyesuaikan dengan Perubahan**: Dengan memeriksa dan memperbarui kebijakan otorisasi secara berkala, kita dapat memastikan bahwa kebijakan tersebut tetap relevan dan sesuai dengan kebutuhan bisnis dan regulasi yang berlaku saat ini.
+
+3. **Mengikuti Prinsip Least Privilege**: Dengan memeriksa kebijakan otorisasi, kita dapat memastikan bahwa setiap pengguna atau sistem hanya memiliki akses sesuai dengan yang dibutuhkan untuk melakukan tugas-tugas mereka (prinsip least
+   privilege). Hal ini membantu mencegah akses yang tidak perlu dan mengurangi risiko penyalahgunaan.
 
 ### 10. Apa itu Access Control List (ACL)?
 
