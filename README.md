@@ -133,20 +133,60 @@ lainnya dalam sistem operasi atau jaringan komputer. ACL mendefinisikan siapa ya
 
 ### 1. Bagaimana otentikasi dan otorisasi bekerja bersama dalam keamanan sistem informasi?
 
+memastikan bahwa hanya pengguna yang sah yang mendapatkan akses yang sesuai
+
 ### 2. Sebutkan contoh aplikasi yang menggunakan otentikasi dan otorisasi.
+
+Aplikasi Mbanking:
+
+Otentikasi: Pengguna harus memasukkan username dan kata sandi mereka. Dan juga menggunakan otentikasi dua faktor (2FA) seperti kode OTP yang dikirim ke ponsel pengguna saat pertama kali mendaftar.
+
+Otorisasi: Setelah masuk, pengguna memiliki akses untuk melihat saldo, melihat riwayat transaksi, melakukan transfer uang, atau membayar tagihan berdasarkan izin yang diberikan oleh bank.
 
 ### 3. Apa yang terjadi jika proses otentikasi gagal?
 
+Pengguna tidak akan diberikan akses ke sistem atau aplikasi. Hal ini dilakukan untuk memastikan bahwa hanya pengguna yang sah dan terverifikasi yang dapat mengakses sumber daya yang dilindungi.
+
 ### 4. Mengapa penting untuk log aktivitas otentikasi dan otorisasi?
+
+Log aktivitas otentikasi dan otorisasi memungkinkan organisasi untuk mendeteksi upaya akses yang tidak sah atau aktivitas mencurigakan. Jika ada pola login yang mencurigakan, seperti upaya login yang gagal berturut-turut atau akses dari
+lokasi geografis yang tidak biasa, tim keamanan dapat mengambil tindakan cepat untuk mencegah potensi serangan.
 
 ### 5. Bagaimana cara sistem menangani perubahan kebijakan otorisasi tanpa mengganggu pengguna?
 
+Sebelum menerapkan perubahan kebijakan otorisasi, lakukan perencanaan dan pengujian di sebelum production. Ini membantu memastikan bahwa perubahan tidak akan menyebabkan gangguan yang tidak diinginkan.
+
+Test akses dengan berbagai peran pengguna untuk memastikan bahwa kebijakan baru bekerja sesuai yang diharapkan.
+
 ### 6. Apa pengaruh kegagalan sistem otentikasi terhadap proses otorisasi?
+
+Jika otentikasi gagal, pengguna tidak akan dapat membuktikan identitas mereka. Tanpa identitas yang terverifikasi, sistem tidak dapat melanjutkan ke langkah berikutnya, yaitu otorisasi. Akibatnya, pengguna tidak akan mendapatkan akses ke
+feature atau informasi yang mereka butuhkan atau minta.
 
 ### 7. Bagaimana implementasi kebijakan "zero trust" mempengaruhi otentikasi dan otorisasi?
 
+Prinsip "zero trust" berarti bahwa tidak ada pengguna atau perangkat yang dipercaya secara otomatis, bahkan jika mereka berada di dalam jaringan organisasi. Sehingga
+
+- Dalam kebijakan "zero trust", setiap permintaan akses harus diautentikasi, tidak peduli dari mana asalnya. Ini berarti bahwa setiap kali pengguna atau perangkat mencoba mengakses aplikasi, mereka harus membuktikan identitas mereka melalui
+  proses otentikasi yang ketat.
+
+- Kebijakan "zero trust" biasanya mendorong penggunaan otentikasi multifaktor (MFA), yang mengharuskan pengguna untuk memverifikasi identitas mereka menggunakan lebih dari satu metode (misalnya, kata sandi ditambah kode OTP dari ponsel).
+
 ### 8. Apa dampak dari serangan keamanan pada sistem otentikasi dan otorisasi?
+
+- Data Sensitif Terancam: Jika penyerang berhasil melewati otentikasi, mereka dapat mengakses data sensitif, termasuk informasi pribadi, keuangan, atau rahasia perusahaan.
+
+- Manipulasi Sistem: Penyerang dapat mengubah atau menghapus data, atau bahkan menanamkan malware yang dapat menyebabkan kerusakan lebih lanjut.
 
 ### 9. Bagaimana teknologi blockchain dapat mempengaruhi otentikasi dan otorisasi?
 
+Data yang disimpan di blockchain tidak dapat diubah atau dihapus. Ini memberikan audit trail yang aman dan transparan untuk semua aktivitas otentikasi dan otorisasi. Dengan menggunakan kriptografi yang kuat, blockchain memastikan bahwa data
+yang disimpan terlindungi dari modifikasi yang tidak sah.
+
 ### 10. Apa peran administrator sistem dalam pengelolaan otentikasi dan otorisasi?
+
+- Mereka memastikan bahwa pengguna memiliki akses yang sesuai dengan kebutuhan pekerjaan mereka, tetapi juga menerapkan prinsip least privilege untuk membatasi akses hanya pada apa yang benar-benar diperlukan.
+
+- Mereka harus merespons dengan cepat terhadap indikasi serangan keamanan atau kegiatan yang mencurigakan, dan mengambil tindakan pencegahan atau pemulihan yang sesuai.
+
+- Mereka harus memastikan kebijakan tersebut diterapkan secara konsisten di seluruh organisasi dan disesuaikan dengan peraturan perundang-undangan dan standar keamanan yang berlaku.
